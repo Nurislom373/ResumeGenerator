@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ResumeInputs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container my-5">
+    <div class="personal my-2">
+        <div class="row">
+            <div class="col-5" style="font-size: 22px; font-weight: 600;">Personal Details</div>
+            <div class="col-6" style="margin-left: 50px;">
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bi bi-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-6 collapse my-5" id="collapseExample">
+            <div class="mb-3">
+                <label for="exampleInputFullname1" class="form-label">Fullname</label>
+                <input type="text" class="form-control" name="exampleInputFullname1" id="exampleInputFullname1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="exampleInputEmail1" id="exampleInputEmail1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputHeadline1" class="form-label">Headline</label>
+                <input type="text" class="form-control" name="exampleInputHeadline1" id="exampleInputHeadline1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPhoneNumber1" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" name="exampleInputPhoneNumber1" id="exampleInputPhoneNumber1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputAbout1" class="form-label">About</label>
+                <textarea class="form-control" rows="4" name="exampleInputAbout1" id="exampleInputAbout1" required></textarea>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 50%">
+    <div class="contact my-2">
+        <div class="row">
+            <div class="col-5" style="font-size: 22px; font-weight: 600;">Contact</div>
+            <div class="col-6" style="margin-left: 50px;">
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#contact"
+                        aria-expanded="false" aria-controls="contact">
+                    <i class="bi bi-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-6 collapse my-5" id="contact">
+            <div class="mb-3">
+                <label for="exampleGithub" class="form-label">Github</label>
+                <input type="email" class="form-control" name="exampleGithub" id="exampleGithub">
+            </div>
+            <div class="mb-3">
+                <label for="exampleTelegram" class="form-label">Telegram</label>
+                <input type="text" class="form-control" name="exampleTelegram" id="exampleTelegram">
+            </div>
+        </div>
+    </div>
+    <hr style="width: 50%">
+    <div class="skillsDiv my-2">
+        <div class="row">
+            <div class="col-5" style="font-size: 22px; font-weight: 600;">Skills</div>
+            <div class="col-6" style="margin-left: 50px;">
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#skills"
+                        aria-expanded="false" aria-controls="skills">
+                    <i class="bi bi-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-6 collapse my-5" id="skills">
+            <div class="skills">
+                <div class="mb-3" id="1">
+                    <div class="row">
+                        <div class="col-10">
+                            <input type="text" name="skill" class="form-control" required>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="remove" onclick="removeInput('1')">
+                                <i style="font-size: 30px; color: black" class="bi bi-dash-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-dark add">Add Field</a>
+        </div>
+    </div>
+    <hr style="width: 50%">
+    <div class="educationDiv my-2">
+        <div class="row">
+            <div class="col-5" style="font-size: 22px; font-weight: 600;">Education</div>
+            <div class="col-6" style="margin-left: 50px;">
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#education"
+                        aria-expanded="false" aria-controls="education">
+                    <i class="bi bi-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-6 collapse my-5" id="education">
+            <div class="educations">
+                <div class="card education mb-3" id="education-1">
+                    <div class="card-body mb-3">
+                        <div class="mb-3">
+                            <label for="exampleEducationName" class="form-label">Education</label>
+                            <input type="text" class="form-control mb-3" id="exampleEducationName">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <label for="exampleEducationStartDate" class="form-label">Start Date</label>
+                                    <input type="date" class="form-control" id="exampleEducationStartDate">
+                                </div>
+                                <div class="col-6">
+                                    <label for="exampleEducationEndDate" class="form-label">End Date</label>
+                                    <input type="date" class="form-control" id="exampleEducationEndDate">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleEducationDescription" class="form-label">Description</label>
+                                <textarea class="form-control" rows="4" id="exampleEducationDescription"></textarea>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-dark" onclick="removeEducation('education-1')">Delete</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-outline-dark addEducation">Add Education</a>
+        </div>
+    </div>
+    <hr style="width: 50%">
+    <div class="workDiv my-2">
+        <div class="row">
+            <div class="col-5" style="font-size: 22px; font-weight: 600;">Work Experience</div>
+            <div class="col-6" style="margin-left: 50px;">
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#work"
+                        aria-expanded="false" aria-controls="work">
+                    <i class="bi bi-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-6 collapse my-5" id="work">
+            <div class="works">
+                <div class="card work mb-3" id="work-1">
+                    <div class="card-body mb-3">
+                        <div class="mb-3">
+                            <label for="exampleWorkPosition" class="form-label">Position</label>
+                            <input type="text" class="form-control mb-3" id="exampleWorkPosition">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <label for="exampleWorkCompany" class="form-label">Company</label>
+                                    <input type="text" class="form-control" id="exampleWorkCompany">
+                                </div>
+                                <div class="col-6">
+                                    <label for="exampleWorkLocation" class="form-label">Location</label>
+                                    <input type="text" class="form-control" id="exampleWorkLocation">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <label for="exampleWorkStartDate" class="form-label">Start Date</label>
+                                    <input type="date" class="form-control" id="exampleWorkStartDate">
+                                </div>
+                                <div class="col-6">
+                                    <label for="exampleWorkEndDate" class="form-label">End Date</label>
+                                    <input type="date" class="form-control" id="exampleWorkEndDate">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleWorkDescription" class="form-label">Description</label>
+                                <textarea class="form-control" rows="4" id="exampleWorkDescription"></textarea>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-dark" onclick="removeWork('work-1')">Delete</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-outline-dark addWork">Add Work</a>
+        </div>
+    </div>
+    <hr style="width: 50%">
+    <a href="#" class="btn btn-outline-dark download">Download</a>
+</div>
+
+<script src="inputs.js"></script>
+<script src="education.js"></script>
+<script src="work.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
